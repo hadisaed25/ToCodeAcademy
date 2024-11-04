@@ -4855,14 +4855,20 @@ a img {
 /* title */
 .header .site-title {
     display: block;
-    line-height: 0;
+    line-height: 1.2; /* Adjusted line height for better readability */
     color: #fff;
+    font-size: 40px; /* Default font-size for small screens */
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width: 550px) {
     .header .site-title {
-        
-        font-size: 60px
+        font-size: 60px; /* Larger font-size for tablets and above */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header .site-title {
+        font-size: 80px; /* Even larger font-size for larger screens */
     }
 }
 /* description of title */
